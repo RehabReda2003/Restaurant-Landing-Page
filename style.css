@@ -173,17 +173,17 @@ margin : 10px 10px;
 
 
 footer {
-  background: #222;              /* خلفية غامقة */
-  color: #fff;                   /* لون الخط أبيض */
-  text-align: center;            /* محاذاة النص في الوسط */
-  padding: 25px 15px;            /* مسافة داخلية */
+  background: #222;              
+  color: #fff;              
+  text-align: center;            
+  padding: 25px 15px;            
   font-family: Arial, sans-serif;
 }
 
 footer .name {
   margin: 0;
   font-size: 14px;
-  color: #bbb;                   /* لون رمادي خفيف */
+  color: #bbb;                  
 }
 
 footer .social-icons {
@@ -193,7 +193,7 @@ footer .social-icons {
 footer .social-links {
   font-size: 13px;
   margin-bottom: 10px;
-  color: #ffcc00;                /* لون مميز للعنوان */
+  color: #ffcc00;             
   font-weight: bold;
 }
 
@@ -201,15 +201,15 @@ footer .social-icons a {
   display: inline-block;
   margin: 0 10px;
   font-size: 20px;
-  color: #ffcc00;                /* اللون الأساسي للأيقونات */
-  background: #333;              /* خلفية دائرية للأيقونات */
+  color: #ffcc00;               
+  background: #333;              
   padding: 10px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
 
 footer .social-icons a:hover {
-  background: #ffcc00;           /* لما تعملي hover */
+  background: #ffcc00;         
   color: #222;
 }
 @media screen and (max-width: 768px) {
