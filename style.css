@@ -1,0 +1,301 @@
+*{
+    padding:0;
+    margin:0;
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+/* all nav */
+nav{
+    position: fixed;
+  width: 100%;
+  top: 0;
+  left:0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 50px;
+background-color: #421800;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* ظل تحت الناف */
+/* عشان يكون فوق أي عنصر تاني */
+z-index: 1000;        
+}
+/* Restaurant */
+nav h3{
+    color:#fff;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+/* list of links */
+nav ul {
+    list-style: none;
+display: flex;
+justify-content: space-between;
+
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    padding: 0 18px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: #c05701;
+    border-radius: 4px;
+}
+
+/* Home Section */
+.home-sec{
+    height: 100vh;
+    background-image: url(images/chicken-skewers-with-slices-apples-chili-top-view.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 50px;
+    margin-top: 50px; 
+    color: #fff;
+}
+/* welcome message */
+.home-sec h2{
+font-size: 50px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+/* discription in paragraph */
+.home-sec p {
+max-width: 500px;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+/* Btn Reserve noe */
+.home-sec button{
+    padding: 12px 25px;
+text-transform: uppercase;
+background-color: #ff7707;
+border-radius: 8px ;
+transition: 0.3s;
+font-size: 16px;
+cursor: pointer;
+color:white
+}
+.home-sec button:hover{
+    background-color:#034201 ;
+}
+/* our menu */
+.menu{
+    padding:30px;
+    background-color: #fce5e5;
+    text-align: center;
+}
+.menu .our-menu h2{
+    font-size: 35px;
+    text-transform: capitalize;
+margin-bottom: 20px;
+color:#421800;
+}
+.menu .menu-items{
+    display: flex;
+    justify-content:center;
+    gap:50px;
+}
+.menu-items div{
+    text-align: left;
+padding: 20px;
+}
+.menu-items h3{
+    color:#421800;
+font-size: 25px;
+}
+ .menu-items div ul{
+    list-style: none;
+padding:0;
+ }
+
+ .menu-items ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+/* about us */
+.about-us{
+background-color:  #f1f0db ;
+display: flex;
+}
+.about-us .restaurant-img{
+    width:40%;
+    text-align: center;
+}
+.about-us .restaurant-img img{
+    width:400px;
+  height: 400px;
+  padding: 20px 0;
+}
+.about-us .content{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 50px;  
+    width:60%;
+}
+
+.about-us .content h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color:#421800;
+}
+
+.about-us .content p{
+    width:700px;
+    font-size: 20px;
+}
+/* contact */
+/* footer{
+color:wheat;
+    background-color:#421800 ;
+    text-align: center;
+}
+footer p.name{
+    font-size: 25px;
+    padding:20px 0 ;
+}
+footer p.social-links{
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+}
+footer .social-icons a{
+margin : 10px 10px;
+} */
+
+
+footer {
+  background: #222;              /* خلفية غامقة */
+  color: #fff;                   /* لون الخط أبيض */
+  text-align: center;            /* محاذاة النص في الوسط */
+  padding: 25px 15px;            /* مسافة داخلية */
+  font-family: Arial, sans-serif;
+}
+
+footer .name {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;                   /* لون رمادي خفيف */
+}
+
+footer .social-icons {
+  margin-top: 15px;
+}
+
+footer .social-links {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #ffcc00;                /* لون مميز للعنوان */
+  font-weight: bold;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #ffcc00;                /* اللون الأساسي للأيقونات */
+  background: #333;              /* خلفية دائرية للأيقونات */
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  background: #ffcc00;           /* لما تعملي hover */
+  color: #222;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-sec {
+    padding: 0 20px;
+  }
+
+  .home-sec h2 {
+    font-size: 35px;
+  }
+
+  .home-sec p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .home-sec button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu .menu-items {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .menu-items div {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us .restaurant-img {
+    width: 100%;
+  }
+
+  .about-us .restaurant-img img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .about-us .content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-us .content p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .social-icons a {
+    margin: 5px;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  footer .social-links {
+    font-size: 12px;
+  }
+}
